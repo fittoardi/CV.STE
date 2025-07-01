@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, Shield, Award, Users, Wrench, Factory, Settings, Cog } from 'lucide-react';
+import { ArrowRight, Shield, Zap, Cpu, Truck, Hammer, Award, Users, Wrench, Factory, Settings, Cog } from 'lucide-react';
 
 const Home = () => {
   const stats = [
@@ -27,14 +27,61 @@ const Home = () => {
   ];
 
   const machines = [
-    'Forming Machine (Pencetak Kerupuk)',
-    'Mixer/Molen Adonan',
-    'Slicer (Pemotong)',
-    'Boiler (Ketel Uap)',
-    'Dryer (Pengering)',
-    'Extruder (Snack)',
-    'Mesin Makaroni',
-    'Conveyor System'
+    {
+      name: 'Forming Machine',
+      description: 'Digunakan untuk mencetak adonan kerupuk secara otomatis dan presisi.',
+      icon: Cog
+    },
+    {
+      name: 'Mixer',
+      description: 'Mesin pengaduk adonan yang kuat dan merata.',
+      icon: Settings
+    },
+    {
+      name: 'Slicer',
+      description: 'Mesin pemotong kerupuk atau makanan ringan lainnya dalam bentuk seragam.',
+      icon: Hammer
+    },
+    {
+      name: 'Boiler',
+      description: 'Sumber uap utama untuk proses produksi yang memerlukan pemanasan.',
+      icon: Zap
+    },
+    {
+      name: 'Dryer',
+      description: 'Untuk mengurangi kadar air dari produk agar lebih tahan lama.',
+      icon: Shield
+    },
+    {
+      name: 'Extruder',
+      description: 'Mesin pembentuk snack dengan berbagai varian bentuk dan ukuran.',
+      icon: Cpu
+    },
+    {
+      name: 'Mesin Makaroni',
+      description: 'Produksi makaroni dengan kualitas baik untuk industri rumahan dan pabrik.',
+      icon: Factory
+    },
+    {
+      name: 'Mesin Screw dan Conveyor',
+      description: 'Untuk mendistribusikan bahan antar proses.',
+      icon: Truck
+    },
+    {
+      name: 'Mesin Pengaduk Bumbu',
+      description: 'Menjamin distribusi bumbu yang merata pada produk.',
+      icon: Settings
+    },
+    {
+      name: 'Mesin Peniris Minyak',
+      description: 'Mengurangi kadar minyak secara efisien pasca penggorengan.',
+      icon: Cog
+    },
+    {
+      name: 'Mesin Penggoreng Kerupuk Pasir',
+      description: 'Sistem penggorengan dengan pasir panas yang merata dan hemat energi.',
+      icon: Zap
+    }
   ];
 
   return (
@@ -148,17 +195,17 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {machines.map((machine, index) => (
               <div
                 key={index}
                 className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 group"
               >
                 <div className="bg-blue-100 p-3 rounded-lg inline-block mb-4 group-hover:bg-blue-600 transition-colors duration-300">
-                  <Cog className="h-6 w-6 text-blue-600 group-hover:text-white" />
+                  <machine.icon className="h-6 w-6 text-blue-600 group-hover:text-white" />
                 </div>
-                <h3 className="font-semibold text-gray-900 mb-2">{machine}</h3>
-                <p className="text-sm text-gray-600">Mesin berkualitas tinggi untuk industri makanan</p>
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">{machine.name}</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">{machine.description}</p>
               </div>
             ))}
           </div>

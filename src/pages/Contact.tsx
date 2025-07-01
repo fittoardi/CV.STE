@@ -15,17 +15,17 @@ const Contact = () => {
     {
       icon: MapPin,
       title: 'Alamat Workshop',
-      details: ['CV. SENTOSA TEKNIK ENGINEERING', 'Sidoarjo, Jawa Timur', 'Indonesia']
+      details: ['JL. Raya Tlasih, No. 124, Tulungan, Tlasih Satu, Tlasih', 'Kec. Sidoarjo, Kabupaten Sidoarjo, Jawa Timur 61273', 'Indonesia']
     },
     {
       icon: Phone,
       title: 'Kontak Telepon',
-      details: ['WhatsApp: +62 [xxx-xxxx-xxxx]', 'Telp: (031) [xxxxxxx]', 'Untuk konsultasi dan pemesanan']
+      details: ['WhatsApp: +62856-8543-495', 'Telp: (031)8850646', 'Untuk konsultasi dan pemesanan']
     },
     {
       icon: Mail,
       title: 'Email & Media Sosial',
-      details: ['sentosateknik@[domain].com', 'Instagram: @sentosateknik.id', 'Informasi produk dan layanan']
+      details: ['sentosateknik@gmail.com', 'Informasi produk dan layanan']
     },
     {
       icon: Clock,
@@ -321,7 +321,7 @@ const Contact = () => {
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Lokasi Workshop</h2>
             <p className="text-xl text-gray-600">
-              JL. Raya Tlasih, No. 124, Tulungan, Tlasih Satu, Tlasih, Kec. Sidoarjo, Kabupaten Sidoarjo, Jawa Timur 61273
+              CV Sentosa Teknik Engineering berlokasi di Sidoarjo, Jawa Timur.
             </p>
           </div>
           

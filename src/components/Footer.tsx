@@ -12,12 +12,12 @@ const Footer = () => {
   ];
 
   const products = [
-    'Forming Machine (Pencetak Kerupuk)',
-    'Mixer/Molen Adonan',
-    'Slicer (Pemotong)',
-    'Boiler (Ketel Uap)',
-    'Dryer (Pengering)',
-    'Extruder (Snack)',
+    'Forming Machine ',
+    'Mixer',
+    'Slicer',
+    'Boiler',
+    'Dryer',
+    'Extruder',
     'Mesin Makaroni',
     'Konsultasi Pabrik'
   ];

@@ -77,7 +77,7 @@ const About = () => {
 
             <div className="relative">
               <img
-                src="https://images.pexels.com/photos/3862618/pexels-photo-3862618.jpeg?auto=compress&cs=tinysrgb&w=600"
+                src="/13.jpg"
                 alt="Workshop CV Sentosa Teknik"
                 className="w-full h-96 object-cover rounded-2xl shadow-lg"
               />
